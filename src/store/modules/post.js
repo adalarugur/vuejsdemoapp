@@ -23,8 +23,8 @@ const getters = {
 
 const mutations = {
     //state değişkenini günceller
-    updateProductList(state, post){
-        state.posts.push(post);
+    updatePostList(state, posts){
+        state.posts = posts
         }
     
 }
@@ -41,9 +41,9 @@ getServicePostsData({commit}){
     debugger;
     axios.get("http://jsonplaceholder.typicode.com/posts").then((response) => {
         debugger;
-        console.log(response.data)
-        state.posts = response.data;
-        
+        /*console.log(response.data)
+        state.posts = response.data;*/
+        commit("updatePostList",response.data)
       })
     
    
