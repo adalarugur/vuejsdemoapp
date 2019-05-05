@@ -1,8 +1,13 @@
 import Vue from 'vue';
+import axios from 'axios';
+import VueAxios from 'vue-axios';
 
 const state = {
-    posts : []
+    posts : [],
+   
 }
+
+
 
 const getters = {
     getPosts(state){
@@ -33,11 +38,11 @@ initApp({commit}){
 
 //metodlar
 getServicePostsData({commit}){
-    Vue.http.get("http://jsonplaceholder.typicode.com/posts",posts).
-    then = ((response)=>{
+    debugger;
+    axios.get("http://jsonplaceholder.typicode.com/posts").then((response) => {
         debugger;
-        console.log(response)
-    })
+        console.log(response.data)
+      })
     
    
 },
