@@ -5,7 +5,9 @@ import post from './modules/post';
 Vue.vuex(Vuex);
 
 export const store = new Vuex.Store({
-    state:{},
+    state:{
+        
+    },
     modules:{
         product
     }
