@@ -24,7 +24,8 @@ const getters = {
 const mutations = {
     //state değişkenini günceller
     updatePostList(state, posts){
-        state.posts = posts
+        state.posts = posts;
+        debugger;
         }
     
 }
@@ -40,10 +41,10 @@ initApp({commit}){
 getServicePostsData({commit}){
     debugger;
     axios.get("http://jsonplaceholder.typicode.com/posts").then((response) => {
-        debugger;
-        /*console.log(response.data)
-        state.posts = response.data;*/
-        commit("updatePostList",response.data)
+        
+        //console.log(response.data)
+       
+        commit("updatePostList",response.data);
       })
     
    
