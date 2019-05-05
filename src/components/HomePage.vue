@@ -1,9 +1,10 @@
 <template>
   <div style="background-color:#8ddad5; ">
     <div class="container">
-      <div >         
+      <div v-for="(post, index) in getPosts" :key="index">         
         <div class="list-group">
           <div class="list-group-item">
+              <label> {{index}}- {{post.title}}</label>
             <button type="button" class="btn btn-primary float-right">Detay</button>
             <button
               type="button"
@@ -57,7 +58,7 @@
 </template>
 
 <script>
-import {mapGetters} from Vuex;
+import {mapGetters} from 'vuex';
 export default {
   mounted() {
     console.log('ugur adalar');
