@@ -23,8 +23,22 @@ const mutations = {
 }
 
 const actions = {
-//asenkron dış servis dönen cevapla mutationu çalıştırır
+//asenkron dış servis dönen cevapla mutationu günceller çalıştırır
+//commit parametresi muttaioni çağırır
+initApp({commit}){
+    //vue resource işlemleri
+},
 
+//metodlar
+getServicePostsData({commit}){
+   
+},
+updatePost({commit},loadData){
+    
+},
+deletePost({commint},loadData){
+
+}
 
 }
 
