@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>daskfjkdf</h1>
+        <h1>Sayfa Üst Kısım</h1>
     </div>
 </template>
 

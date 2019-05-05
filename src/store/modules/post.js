@@ -42,6 +42,8 @@ getServicePostsData({commit}){
     axios.get("http://jsonplaceholder.typicode.com/posts").then((response) => {
         debugger;
         console.log(response.data)
+        state.posts = response.data;
+        
       })
     
    

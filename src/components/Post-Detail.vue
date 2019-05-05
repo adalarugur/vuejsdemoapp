@@ -1,6 +1,6 @@
 <template>  
 <div>
-    <h2>hf</h2>
+    <h2>PostDetail</h2>
 </div>
 </template>
 

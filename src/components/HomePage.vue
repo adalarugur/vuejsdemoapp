@@ -1,7 +1,7 @@
 <template>  
 
 <div >
- <h1>deneme 123</h1>
+ <h1>DashBoard </h1>
 
 </div>
 

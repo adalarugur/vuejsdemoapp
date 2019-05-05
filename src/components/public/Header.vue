@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>skdadfjlsdha</h1>
+        <h1>Sayfa Alt Kısım</h1>
     </div>
 </template>
 

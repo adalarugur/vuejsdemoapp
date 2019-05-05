@@ -1,6 +1,6 @@
 <template>  
 <div>
-    <h2>hgh</h2>
+    <h2>ProfileDetail</h2>
 </div>
 </template>
 
