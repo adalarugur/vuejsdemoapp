@@ -1,3 +1,5 @@
+import Vue from 'vue';
+
 const state = {
     posts : []
 }
@@ -31,6 +33,12 @@ initApp({commit}){
 
 //metodlar
 getServicePostsData({commit}){
+    Vue.http.get("http://jsonplaceholder.typicode.com/posts",posts).
+    then = ((response)=>{
+        debugger;
+        console.log(response)
+    })
+    
    
 },
 updatePost({commit},loadData){
