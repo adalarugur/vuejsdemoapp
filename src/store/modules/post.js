@@ -60,7 +60,7 @@ putServicePostsData({commit},id){
       }).catch(error => console.log("hata post güncellenemedi! " + error)); 
     
 },
-deleteServicePostsData({commint},id){
+deleteServicePostsData({commit},id){
     axios.put("http://jsonplaceholder.typicode.com/posts/" + id).then((response) => {
         
         //console.log(response.data)
