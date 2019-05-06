@@ -45,14 +45,28 @@ getServicePostsData({commit}){
         //console.log(response.data)
        
         commit("updatePostList",response.data);
-      })
+      }).
+      catch(error => console.log("hata posts listesi çekilemedi! " + error)); 
+
     
    
 },
-updatePost({commit},loadData){
+putServicePostsData({commit},id){
+    axios.put("http://jsonplaceholder.typicode.com/posts/" + id).then((response) => {
+        
+        //console.log(response.data)
+       
+        commit("updatePostList",response.data);
+      }).catch(error => console.log("hata post güncellenemedi! " + error)); 
     
 },
-deletePost({commint},loadData){
+deleteServicePostsData({commint},id){
+    axios.put("http://jsonplaceholder.typicode.com/posts/" + id).then((response) => {
+        
+        //console.log(response.data)
+       
+        commit("updatePostList",response.data);
+      }).catch(error => console.log("hata post silinemedi! " + error)); 
 
 }
 
