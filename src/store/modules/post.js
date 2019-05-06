@@ -7,12 +7,12 @@ const state = {
    
 }
 
+const apiURL = "http://jsonplaceholder.typicode.com";
 
 
 const getters = {
     getPosts(state){
-        //web servis datası todo
-
+        /* state datasının Vue compoennette map edildiği alan */
         return state.posts;
 
     },
@@ -22,7 +22,7 @@ const getters = {
 }
 
 const mutations = {
-    //state değişkenini günceller
+    //State değişkenini günceller
     updatePostList(state, posts){
         state.posts = posts;
         debugger;
@@ -40,7 +40,7 @@ initApp({commit}){
 //metodlar
 getServicePostsData({commit}){
     debugger;
-    axios.get("http://jsonplaceholder.typicode.com/posts").then((response) => {
+    axios.get( apiURL + "/posts").then((response) => {
         
         //console.log(response.data)
        
@@ -52,7 +52,7 @@ getServicePostsData({commit}){
    
 },
 putServicePostsData({commit},id){
-    axios.put("http://jsonplaceholder.typicode.com/posts/" + id).then((response) => {
+    axios.put( apiURL + "/posts/" + id).then((response) => {
         
         //console.log(response.data)
        
@@ -61,7 +61,7 @@ putServicePostsData({commit},id){
     
 },
 deleteServicePostsData({commit},id){
-    axios.put("http://jsonplaceholder.typicode.com/posts/" + id).then((response) => {
+    axios.put(apiURL + "/posts/" + id).then((response) => {
         
         //console.log(response.data)
        
